@@ -1,4 +1,4 @@
-package com.example.testwork.screens.Auth
+package com.example.testwork.presentation.Auth
 
 import android.widget.Toast
 import androidx.compose.foundation.layout.Arrangement
@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
+import androidx.compose.material3.Card
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
@@ -78,6 +79,12 @@ fun AuthScreen(
                 }
             }) {
                 Text("Register")
+            }
+        }
+        Spacer(Modifier.height(15.dp))
+        Card(Modifier.fillMaxWidth(0.7f)) {
+            Row(horizontalArrangement = Arrangement.SpaceAround){
+                Text("Enter with Google")
             }
         }
     }
