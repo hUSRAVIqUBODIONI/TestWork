@@ -5,6 +5,7 @@ plugins {
     alias(libs.plugins.hilt)
 
     id("kotlin-kapt")
+    id("com.google.gms.google-services")
 }
 
 kapt {
@@ -72,7 +73,7 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.1")
 
 
-
+    //fireBase
     implementation(platform("com.google.firebase:firebase-bom:34.10.0"))
     implementation("com.google.firebase:firebase-auth")
 
@@ -91,4 +92,11 @@ dependencies {
 
     //navigation
     implementation(libs.androidx.navigation.compose)
+
+    //SignInGoogle
+    implementation("androidx.credentials:credentials:1.3.0")
+    implementation("androidx.credentials:credentials-play-services-auth:1.3.0")
+    implementation("com.google.android.libraries.identity.googleid:googleid:1.1.1")
+
+
 }
